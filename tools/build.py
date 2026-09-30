@@ -94,6 +94,7 @@ LIFE = [("~10 days", "ราว 10 วัน", "ប្រហែល 10 ថ្ង�
 SOURCES = [
     ("Pidan (textile) — Wikipedia", "https://en.wikipedia.org/wiki/Pidan_(textile)"),
     ("Sampot — Wikipedia", "https://en.wikipedia.org/wiki/Sampot"),
+    ("Cambodian kiet — Asian Textile Studies", "http://www.asiantextilestudies.com/kiet.html"),
     ("What is Khmer ikat? — IKTT", "https://www.ikttearth.org/what-is-khmer-ikatt"),
     ("Saving Cambodia's ancient silk legacy — National Geographic", "https://www.nationalgeographic.com/culture/article/kikuo-morimoto-explorer-moments-reviving-silk-production-cambodia"),
     ("Thai silk: elegance in threads — Thailand Foundation", "https://thailandfoundation.or.th/thai-silk-elegance-in-threads/"),
@@ -296,8 +297,8 @@ def page():
 <section class="sec" id="ikat">
 <p class="kick">{te("Ikat", "มัดหมี่", "ចងជ្រលក់")}</p>
 <h2>{te("Dye the picture into the thread", "ย้อมลายลงในเส้นด้าย", "ជ្រលក់ក្បាច់ចូលក្នុងអំបោះ")}</h2>
-<p class="lede">{te("Ikat, from the Malay and Indonesian word for tie, dyes the pattern before weaving. Bundles of thread are bound tight where colour must stay out, dipped, untied, bound again and dipped again. In Cambodia the weft-ikat silk is hol; in Thailand it is mudmee, “tie the bundle”. Woven, each dyed thread lands a hair off its neighbour, and the edges feather.",
- "อิกัต มาจากคำมลายูและอินโดนีเซียที่แปลว่ามัด คือการย้อมลายก่อนทอ มัดปอยด้ายให้แน่นตรงที่ไม่ให้สีเข้า จุ่มย้อม แก้มัด มัดใหม่ แล้วย้อมอีก ในกัมพูชาผ้าไหมมัดเส้นพุ่งเรียกว่าโฮล ในไทยเรียกว่ามัดหมี่ พอทอ เส้นที่ย้อมแล้วแต่ละเส้นเหลื่อมจากเส้นข้าง ๆ นิดหนึ่ง ขอบลายจึงฟุ้งเหมือนขนนก",
+<p class="lede">{te("Ikat, from the Malay and Indonesian word for tie, dyes the pattern before weaving. Bundles of thread are bound tight where colour must stay out, dipped, untied, bound again and dipped again. In Cambodia the tying is chong kiet, “tying strings”, and the weft-ikat silk is hol; in Thailand it is mudmee, “tie the bundle”. Woven, each dyed thread lands a hair off its neighbour, and the edges feather.",
+ "อิกัต มาจากคำมลายูและอินโดนีเซียที่แปลว่ามัด คือการย้อมลายก่อนทอ มัดปอยด้ายให้แน่นตรงที่ไม่ให้สีเข้า จุ่มย้อม แก้มัด มัดใหม่ แล้วย้อมอีก ในกัมพูชาเรียกการมัดว่า จองเกียต แปลว่า “มัดเชือก” และเรียกผ้าไหมมัดเส้นพุ่งว่าโฮล ในไทยเรียกว่ามัดหมี่ พอทอ เส้นที่ย้อมแล้วแต่ละเส้นเหลื่อมจากเส้นข้าง ๆ นิดหนึ่ง ขอบลายจึงฟุ้งเหมือนขนนก",
  "ពាក្យ អ៊ីកាត់ មកពីភាសាម៉ាឡេ និងឥណ្ឌូណេស៊ី មានន័យថា ចង។ គេជ្រលក់ក្បាច់មុនពេលត្បាញ៖ ចងបាច់អំបោះឱ្យណែននៅកន្លែងដែលមិនចង់ឱ្យពណ៌ចូល ជ្រលក់ ស្រាយ ចងម្តងទៀត ហើយជ្រលក់ម្តងទៀត។ នៅកម្ពុជា សូត្រចងអំបោះទទឹងហៅថា ហូល នៅថៃហៅថា ម៉ាត់មី។ ពេលត្បាញ អំបោះនីមួយៗរំកិលពីសរសៃជិតខាងបន្តិច គែមក្បាច់ក៏ព្រាលដូចរោមសត្វស្លាប។")}</p>
 <div class="toy"><canvas id="ikat-cv" aria-label="{te("Tie, dye and weave", "มัด ย้อม ทอ", "ចង ជ្រលក់ ត្បាញ")}"></canvas>
 <p class="out" id="ikat-cap"></p>
@@ -311,15 +312,16 @@ def page():
 <section class="sec" id="shawl">
 <p class="kick">{te("Shawl", "ผ้าคลุมไหล่", "កន្សែង")}</p>
 <h2>{te("NaN's shawl", "ผ้าคลุมไหล่ของแนน", "កន្សែងសូត្ររបស់ណាន")}</h2>
-<p class="lede">{te("A Khmer silk hol: a dark ground, gold humped cattle, pink and teal flowers, and rows of woven Khmer letters. The gold word reads គោ, kou, “cow”. The redrawing is a plan of 72 × 104 squares woven in a 1/2 twill. Pull drift to zero for the plan as it was tied; push it up for the tie-dye blur.",
- "ผ้าโฮลไหมเขมร พื้นสีเข้ม วัวมีหนอกสีทอง ดอกไม้ชมพูกับเขียวหัวเป็ด และแถวอักษรเขมรที่ทอไว้ในผ้า คำสีทองอ่านว่า គោ (โก) แปลว่า “วัว” ภาพวาดใหม่คือแบบขนาด 72 × 104 ช่อง ทอลายสอง 1/2 เลื่อน “เหลื่อม” ไปที่ศูนย์ จะเห็นแบบตอนมัด เลื่อนขึ้นจะเห็นขอบฟุ้งของการมัดย้อม",
- "ហូលសូត្រខ្មែរ៖ ផ្ទៃពណ៌ចាស់ គោមានបូកពណ៌មាស ផ្កាពណ៌ផ្កាឈូក និងបៃតងខៀវ និងជួរអក្សរខ្មែរដែលត្បាញក្នុងក្រណាត់។ ពាក្យពណ៌មាសអានថា គោ។ រូបគូរថ្មីគឺជាប្លង់ 72 × 104 ក្រឡា ត្បាញទ្រេត 1/2។ ទាញ «រំកិល» ទៅសូន្យ ដើម្បីមើលប្លង់ពេលចង ទាញឡើង ដើម្បីមើលគែមព្រាលនៃការចងជ្រលក់។")}</p>
+<p class="lede">{te("A Khmer silk hol, ikat through and through: every colour was tied and dyed into the weft before weaving. The silk has a shantung texture, the nubbly hand of thread with thick and thin places. On it: gold humped cattle, pink and teal flowers, and rows of woven Khmer letters; the gold word reads គោ, kou, “cow”. The redrawing is a plan of 72 × 104 squares. Pull drift to zero for the plan as it was tied; push it up for the tie-dye blur. Slubs adds the thick-and-thin thread.",
+ "ผ้าโฮลไหมเขมร เป็นมัดหมี่ทั้งผืน ทุกสีมัดและย้อมลงในเส้นพุ่งก่อนทอ เนื้อไหมเป็นแบบซานตุง ผิวสัมผัสเป็นปุ่มปมจากเส้นด้ายที่มีช่วงหนาช่วงบาง บนผ้ามีวัวมีหนอกสีทอง ดอกไม้ชมพูกับเขียวหัวเป็ด และแถวอักษรเขมรที่ทอไว้ คำสีทองอ่านว่า គោ (โก) แปลว่า “วัว” ภาพวาดใหม่คือแบบขนาด 72 × 104 ช่อง เลื่อน “เหลื่อม” ไปที่ศูนย์ จะเห็นแบบตอนมัด เลื่อนขึ้นจะเห็นขอบฟุ้งของการมัดย้อม “ปุ่มปม” เพิ่มเส้นด้ายหนาบาง",
+ "ហូលសូត្រខ្មែរ ជាក្រណាត់ចងជ្រលក់ទាំងស្រុង៖ ពណ៌នីមួយៗត្រូវបានចង និងជ្រលក់ចូលក្នុងអំបោះទទឹង មុនពេលត្បាញ។ សូត្រមានវាយនភាពដូចសានទុង គឺផ្ទៃរដុបៗពីអំបោះដែលមានកន្លែងក្រាស់ កន្លែងស្តើង។ លើក្រណាត់មាន គោមានបូកពណ៌មាស ផ្កាពណ៌ផ្កាឈូក និងបៃតងខៀវ និងជួរអក្សរខ្មែរដែលត្បាញ។ ពាក្យពណ៌មាសអានថា គោ។ រូបគូរថ្មីគឺជាប្លង់ 72 × 104 ក្រឡា។ ទាញ «រំកិល» ទៅសូន្យ ដើម្បីមើលប្លង់ពេលចង ទាញឡើង ដើម្បីមើលគែមព្រាលនៃការចងជ្រលក់។ «ក្រាស់ស្តើង» បន្ថែមអំបោះក្រាស់ស្តើង។")}</p>
 <div class="toy"><div class="pair">
 <figure><img src="{up}img/shawl.jpg" width="900" height="1199" loading="lazy" alt="{te("NaN's Khmer silk shawl: gold humped cattle on a dark ground, pink and teal flowers, rows of Khmer letters", "ผ้าไหมเขมรของแนน วัวสีทองบนพื้นเข้ม ดอกไม้ชมพูกับเขียว แถวอักษรเขมร", "កន្សែងសូត្រខ្មែររបស់ណាន៖ គោពណ៌មាសលើផ្ទៃពណ៌ចាស់ ផ្កាពណ៌ផ្កាឈូក និងបៃតង ជួរអក្សរខ្មែរ")}">
 <figcaption>{te("Photo", "ภาพถ่าย", "រូបថត")} · NaN</figcaption></figure>
 <figure><canvas id="shawl-draw" aria-label="{te("The shawl redrawn by arithmetic", "ผ้าผืนเดียวกัน วาดด้วยเลขคณิต", "កន្សែងដដែល គូរដោយលេខនព្វន្ត")}"></canvas>
 <figcaption>{te("Drawn by arithmetic", "วาดด้วยเลขคณิต", "គូរដោយលេខនព្វន្ត")}</figcaption></figure></div>
 <div class="ctl"><label>{te("drift", "เหลื่อม", "រំកិល")} <input id="shawl-bleed" type="range" min="0" max="4" step="0.25" value="1.5"></label>
+<label>{te("slubs", "ปุ่มปม", "ក្រាស់ស្តើង")} <input id="shawl-slub" type="range" min="0" max="2" step="0.1" value="1"></label>
 <label>{te("zoom", "ขยาย", "ពង្រីក")} <input id="shawl-zoom" type="range" min="2" max="12" step="1" value="5"></label></div></div>
 </section>
 

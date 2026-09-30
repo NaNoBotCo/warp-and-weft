@@ -125,14 +125,20 @@ function shawlDesign() {
 const HOL = (c, q) => mod(c + q, 3) === 0;
 function weaveImage(D, cols, rows, cell, o) {
   const img = new ImageData(cols * cell, rows * cell), px = img.data, W = D.W, H = D.H;
-  const bleed = o.bleed || 0, seed = o.seed || 7, weave = o.weave || HOL, warp = RGB[o.warp == null ? BK : o.warp];
+  const bleed = o.bleed || 0, slub = o.slub || 0, seed = o.seed || 7, weave = o.weave || HOL, warp = RGB[o.warp == null ? BK : o.warp];
   for (let r = 0; r < rows; r++) {
     const q = o.pick ? o.pick(r) : r, qq = o.flip ? H - 1 - mod(q, H) : mod(q, H);
     const sh = bleed ? Math.round((noise1(qq * 0.5, seed) - 0.5) * 2.2 * bleed) : 0;
     for (let c = 0; c < cols; c++) {
       let jit = 0;
       if (bleed) { const h = hash(c >> 1, qq * 7 + seed); jit = h < 0.12 * bleed ? -1 : h > 1 - 0.12 * bleed ? 1 : 0; }
-      const k = D.d[qq * W + mod(c + sh + jit, W)], wf = RGB[k], up = weave(c, q);
+      const k = D.d[qq * W + mod(c + sh + jit, W)], up = weave(c, q);
+      // shantung: hand-reeled thread runs thick and thin, and a slub catches the light
+      let wf = RGB[k];
+      if (slub) {
+        const f = 1 + slub * ((noise1(c * 0.07 + qq * 17.3, seed + 3) - 0.5) * 0.3 + (hash(c >> 2, qq * 31 + seed) > 1 - 0.035 * slub ? 0.28 : 0));
+        wf = [Math.min(255, wf[0] * f), Math.min(255, wf[1] * f), Math.min(255, wf[2] * f)];
+      }
       for (let j = 0; j < cell; j++) {
         const vy = 1.12 - 0.34 * Math.abs((j + 0.5) / cell - 0.5) * 2;
         for (let i = 0; i < cell; i++) {
@@ -160,7 +166,7 @@ function hero(D) {
     const h = card ? 630 : Math.round(Math.max(460, Math.min(innerHeight * 0.8, 760)));
     st = fit(cv, h); cell = st.w < 640 ? 3 : 4; cols = Math.ceil(st.w / cell) + 1;
     fellY = Math.round(h * (card ? 0.5 : 0.46));
-    cloth = toCanvas(weaveImage(D, cols, T3, cell, { bleed: 1.6, seed: 11, pick: r => T3 - 1 - r, flip: true }));
+    cloth = toCanvas(weaveImage(D, cols, T3, cell, { bleed: 1.6, slub: 0.9, seed: 11, pick: r => T3 - 1 - r, flip: true }));
     if (pick == null) pick = H + (card ? 84 : 70);
     draw();
   }
@@ -364,14 +370,14 @@ function ikat() {
 // ---------- the shawl, redrawn ----------
 function shawl(D) {
   const cv = $("#shawl-draw"); if (!cv) return;
-  const bl = $("#shawl-bleed"), zm = $("#shawl-zoom");
+  const bl = $("#shawl-bleed"), zm = $("#shawl-zoom"), sl = $("#shawl-slub");
   function draw() {
     const cell = +zm.value, h = Math.min(560, Math.round(cv.clientWidth * 1.2)), st = fit(cv, h);
     const cols = Math.ceil(st.w / cell), rows = Math.ceil(h / cell);
     st.x.imageSmoothingEnabled = false;
-    st.x.drawImage(toCanvas(weaveImage(D, cols, rows, cell, { bleed: +bl.value, seed: 3, pick: r => r + 2 })), 0, 0);
+    st.x.drawImage(toCanvas(weaveImage(D, cols, rows, cell, { bleed: +bl.value, slub: +sl.value, seed: 3, pick: r => r + 2 })), 0, 0);
   }
-  bl.addEventListener("input", draw); zm.addEventListener("input", draw); addEventListener("resize", draw); draw();
+  bl.addEventListener("input", draw); zm.addEventListener("input", draw); sl.addEventListener("input", draw); addEventListener("resize", draw); draw();
 }
 
 // ---------- seven friezes from one motif ----------
