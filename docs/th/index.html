@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="th"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" content="notranslate">
+<title>เส้นยืน เส้นพุ่ง · ผ้าไหม วาดด้วยเลขคณิต</title>
+<meta name="description" content="ผ้าไหม การทอ และเลขคณิตในเนื้อผ้า กี่ที่กำลังทอผ้าไหมเขมร แบบทอที่เป็นการคูณเมทริกซ์ มัดหมี่ ลายขอบเจ็ดแบบ ผ้าต่วนด้วยทฤษฎีจำนวน รังไหมที่หนอนชักใยเป็นเลขแปด และเส้นทางสายไหม ภาษาอังกฤษ ไทย และเขมร">
+<meta name="theme-color" content="#1a100b">
+<link rel="canonical" href="https://nanobotco.github.io/warp-and-weft/th/"><link rel="alternate" hreflang="en" href="https://nanobotco.github.io/warp-and-weft/"><link rel="alternate" hreflang="th" href="https://nanobotco.github.io/warp-and-weft/th/"><link rel="alternate" hreflang="km" href="https://nanobotco.github.io/warp-and-weft/km/"><link rel="alternate" hreflang="x-default" href="https://nanobotco.github.io/warp-and-weft/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Warp and Weft · เส้นยืน เส้นพุ่ง · អំបោះបញ្ឈរ អំបោះទទឹង">
+<meta property="og:title" content="เส้นยืน เส้นพุ่ง"><meta property="og:description" content="ผ้าไหม การทอ และเลขคณิตในเนื้อผ้า กี่ที่กำลังทอผ้าไหมเขมร แบบทอที่เป็นการคูณเมทริกซ์ มัดหมี่ ลายขอบเจ็ดแบบ ผ้าต่วนด้วยทฤษฎีจำนวน รังไหมที่หนอนชักใยเป็นเลขแปด และเส้นทางสายไหม ภาษาอังกฤษ ไทย และเขมร"><meta property="og:url" content="https://nanobotco.github.io/warp-and-weft/th/">
+<meta property="og:image" content="https://nanobotco.github.io/warp-and-weft/card.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="กี่กำลังทอผ้าไหมมัดหมี่เขมรลายวัวสีทอง วาดด้วยเลขคณิต">
+<meta property="og:locale" content="th_TH">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://nanobotco.github.io/warp-and-weft/card.jpg">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="https://nanobotco.github.io/warp-and-weft/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@700&display=swap&text=គោ">
+<style>
+:root{--bg:#f6efe3;--card:#fffaf1;--ink:#2a1a12;--mute:#6d5646;--line:#e3d5c0;--gold:#b97a1c;--teal:#137a71;--pink:#c24a82;--dark:#1a100b;
+ --f:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Thai","Noto Sans Khmer","Khmer Sangam MN",sans-serif;--s:Georgia,"Noto Serif Thai","Noto Serif Khmer",serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c120d;--card:#26190f;--ink:#f0e6d6;--mute:#bba58f;--line:#3d2b1f;--gold:#e9a53c;--teal:#3fb3a6;--pink:#e377a9}}
+:root[data-theme=dark]{--bg:#1c120d;--card:#26190f;--ink:#f0e6d6;--mute:#bba58f;--line:#3d2b1f;--gold:#e9a53c;--teal:#3fb3a6;--pink:#e377a9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--f);-webkit-text-size-adjust:100%}
+:lang(th) body,body:lang(th){line-height:1.8}:lang(km) body,body:lang(km){line-height:1.9}
+a{color:var(--teal)}h2,h3{font-family:var(--s);line-height:1.2}
+header.top{position:sticky;top:0;z-index:20;background:rgba(20,11,7,.92);backdrop-filter:blur(6px);color:#f4ead8;transition:transform .25s}
+body.nav-away header.top{transform:translateY(-100%)}
+header.top .in{display:flex;gap:14px;align-items:center;max-width:1180px;margin:0 auto;padding:8px 16px}
+.brand{color:#f4ead8;text-decoration:none;font-weight:700;white-space:nowrap;display:flex;gap:8px;align-items:center}
+.brand svg{width:26px;height:26px}
+header.top nav{display:flex;gap:12px;overflow-x:auto;flex:1;scrollbar-width:none;font-size:14px}
+header.top nav::-webkit-scrollbar{display:none}
+header.top nav a,.langsw a{color:#e7d6bd;text-decoration:none;white-space:nowrap}
+header.top nav a:hover{color:#fff}
+.langsw{display:flex;gap:8px;font-size:14px}.langsw a[aria-current]{color:#e9a53c;font-weight:700}
+.hero{position:relative;background:#0d0705;color:#f4ead8}
+#loom{display:block;width:100%;height:560px}
+.hero .over{position:absolute;left:0;right:0;top:0;padding:28px 16px 0;pointer-events:none}
+.hero .over .in{max-width:1180px;margin:0 auto}
+.hero h1{font-family:var(--s);font-size:clamp(34px,6.4vw,76px);margin:0;line-height:1.02;text-shadow:0 2px 18px #000}
+.hero .sub{font-size:clamp(15px,2vw,20px);max-width:640px;margin:10px 0 0;color:#ecdcc4;text-shadow:0 1px 10px #000}
+.hero .langs{font-size:clamp(15px,2vw,19px);color:#e9a53c;margin-top:8px;text-shadow:0 1px 10px #000}
+main{max-width:1060px;margin:0 auto;padding:0 16px}
+.slab{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:28px 0}
+.slab div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.slab b{display:block;font:700 28px/1.1 var(--s);color:var(--gold)}.slab span{font-size:14px;color:var(--mute)}
+section.sec{padding:34px 0;border-top:1px solid var(--line)}
+section.sec>h2{font-size:clamp(28px,4vw,42px);margin:0 0 6px}
+.kick{color:var(--gold);font-weight:700;letter-spacing:.02em;margin:0}
+.lede{max-width:720px}
+.toy{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:18px 0}
+.toy canvas{display:block;width:100%;border-radius:8px;touch-action:manipulation}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0;font-size:15px}
+.ctl button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.ctl button:hover{border-color:var(--gold)}
+.ctl label{display:flex;gap:6px;align-items:center}
+.ctl input[type=range]{width:130px;accent-color:var(--gold)}
+.ctl select,.ctl input[type=text]{font:inherit;font-size:15px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.out{font-size:15px;color:var(--mute);margin:10px 0 0;min-height:1.6em}
+.formula{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--mute);overflow-wrap:anywhere}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pair figure{margin:0}.pair img{width:100%;border-radius:8px;display:block}
+figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:18px 0}
+.cards article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.cards h3{margin:0 0 2px;font-size:22px}.cards .alt{color:var(--gold);font-size:15px;margin:0 0 6px}
+.cards p{margin:0;font-size:16px}
+blockquote{margin:18px 0;padding:10px 18px;border-left:4px solid var(--gold);font-family:var(--s);font-size:20px}
+.life{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.life li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:15px}
+.life b{display:block;color:var(--teal)}
+.two{display:grid;grid-template-columns:200px 1fr;gap:14px;align-items:start}
+#motif{max-width:168px;cursor:pointer}
+.legend{font-size:13px;color:var(--mute)}
+.sources li{margin:4px 0;font-size:15px}
+footer.bot{border-top:1px solid var(--line);margin-top:30px;padding:20px 16px;font-size:14px;color:var(--mute);text-align:center}
+@media (max-width:640px){.pair,.two{grid-template-columns:1fr}.slab b{font-size:24px}header.top nav{display:none}}
+body.card header.top,body.card main,body.card footer{display:none}
+body.card .over{padding:60px 64px 0}body.card #loom{height:100vh}
+</style>
+<script>if(/[?&]card\b/.test(location.search))document.documentElement.classList.add("card-mode")</script>
+</head><body>
+<script>if(document.documentElement.classList.contains("card-mode"))document.body.classList.add("card")</script>
+<header class="top"><div class="in">
+<a class="brand" href="../th/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2v20M9 2v20M14 2v20M19 2v20M2 7h20M2 12h20M2 17h20" stroke="#e9a53c" stroke-width="1.6" fill="none"/></svg>เส้นยืน เส้นพุ่ง</a>
+<nav aria-label="หัวข้อ"><a href="#loom-sec">กี่</a><a href="#math">คณิต</a><a href="#ikat">มัดหมี่</a><a href="#shawl">ผ้าคลุมไหล่</a><a href="#cambodia">กัมพูชา</a><a href="#thailand">ไทย</a><a href="#worm">หนอนไหม</a><a href="#road">เส้นทางสายไหม</a><a href="#draw">วาด</a><a href="#sources">แหล่งข้อมูล</a></nav>
+<span class="langsw"><a href="../" hreflang="en" lang="en">EN</a> <a href="../th/" hreflang="th" lang="th" aria-current=page>ไทย</a> <a href="../km/" hreflang="km" lang="km">ខ្មែរ</a></span>
+</div></header>
+
+<div class="hero"><canvas id="loom" role="img" aria-label="กี่กำลังทอผ้าไหมเขมรของแนน ทีละเส้นพุ่ง"></canvas>
+<div class="over"><div class="in"><h1>เส้นยืน เส้นพุ่ง</h1>
+<p class="langs">Warp and Weft · អំបោះបញ្ឈរ អំបោះទទឹង</p>
+<p class="sub">ผ้าไหม การทอ และเลขคณิตในเนื้อผ้า กี่นี้กำลังทอผ้าไหมเขมรของแนน ทีละเส้นพุ่ง จากแบบที่วาดด้วยโค้ด</p></div></div></div>
+
+<main>
+<div class="slab"><div><b>2</b><span>ชุดเส้นด้ายในผ้าทอทุกผืน</span></div><div><b>1/2</b><span>ลายสองของผ้าโฮล เส้นยืนโผล่หนึ่งในสามจุด</span></div><div><b>~900 m</b><span>เส้นไหมในรังเดียว</span></div><div><b>7</b><span>วิธีทำซ้ำลายขอบ</span></div><div><b>1804</b><span>กี่บัตรเจาะรูของฌากการ์</span></div><div><b>c. 552</b><span>ไข่ไหมถึงคอนสแตนติโนเปิล</span></div></div>
+
+<section class="sec" id="loom-sec">
+<p class="kick">กี่</p>
+<h2>สองเส้น ขึ้นกับลง</h2>
+<p class="lede">เส้นยืนขึงตึงตามความยาวของกี่ เส้นพุ่งสอดขวางผ่าน ข้ามบางเส้น ลอดบางเส้น เส้นไหนจะยกขึ้นขึ้นอยู่กับตะกอ คือกรอบที่ยกเส้นยืนชุดหนึ่งขึ้นเมื่อช่างทอเหยียบไม้เหยียบ</p>
+<p class="lede">แบบทอเขียนเรื่องนี้เป็นตารางสามชุด ด้านบน: เส้นยืนแต่ละเส้นร้อยผ่านตะกอไหน มุมขวาบน: ไม้เหยียบแต่ละอันยกตะกอไหน ด้านขวา: เส้นพุ่งแต่ละเส้นใช้ไม้เหยียบอันไหน ผ้าคือผลคูณของทั้งสาม เส้นยืนโผล่ตรงที่ไม้เหยียบยกตะกอของเส้นนั้น แตะช่องไหนก็ได้เพื่อเปลี่ยน</p>
+<div class="toy"><canvas id="draft" aria-label="แบบทอ"></canvas>
+<p class="formula">cloth[pick][warp] = tie-up[shaft(warp)][treadle(pick)]</p>
+<canvas id="draft-cloth" aria-hidden="true"></canvas>
+<div class="ctl">
+<button data-draft="plain">ลายขัด</button><button data-draft="basket">ลายตะกร้า</button>
+<button data-draft="hol">โฮล 1/2</button><button data-draft="twill">ลายสอง 2/2</button>
+<button data-draft="twill31">ลายสอง 3/1</button><button data-draft="diamond">ข้าวหลามตัด</button>
+<button data-draft="colour">สี</button><button data-draft="random">สุ่ม</button>
+</div></div>
+</section>
+
+<section class="sec" id="math">
+<p class="kick">คณิต</p>
+<h2>ผ้าที่คำนวณ</h2>
+<p class="lede">ปี 1804 โจเซฟ มารี ฌากการ์ แขวนสายบัตรเจาะรูไว้บนกี่ บัตรหนึ่งใบต่อเส้นพุ่งหนึ่งเส้น รูหนึ่งรูต่อเส้นยืนที่ต้องยก ชาลส์ แบบเบจ ยืมบัตรนี้ไปใช้กับเครื่องวิเคราะห์ของเขา และปี 1843 เอดา เลิฟเลซ เขียนว่าเครื่องนั้น</p>
+<blockquote lang="en">“weaves algebraical patterns just as the Jacquard loom weaves flowers and leaves.”</blockquote>
+<p class="lede">“ทอลวดลายพีชคณิต เหมือนกี่ฌากการ์ทอดอกไม้และใบไม้”</p>
+<p class="lede">ช่างทอในไทย ลาว และกัมพูชา ก็เก็บลายไว้เหมือนกัน สำหรับผ้าขิดและผ้าเสริมเส้นพุ่ง ช่างทอเก็บลายครั้งแรกด้วยไม้เก็บลาย แล้วบันทึกแต่ละแถวเป็นเขาเชือกแขวนเหนือกี่ ยกตามลำดับ ลายก็ซ้ำ ส่งต่อให้ช่างทอคนอื่น ลายก็เดินทางไปด้วย</p>
+<h3>ผ้าต่วน ด้วยทฤษฎีจำนวน</h3>
+<p class="lede">ผ้าต่วนขัดเส้นยืนแต่ละเส้นหนึ่งครั้งในทุก n เส้น ขยับไป k ช่องทุกแถว จุดขัดจึงไม่ติดกัน เส้นที่ลอยยาวจึงเป็นมันวาว ใช้ได้เมื่อ k กับ n ไม่มีตัวหารร่วม และ k ไม่ใช่ 1 หรือ n−1 ลอง 4 กับ 6 ดู ไม่มีก้าวไหนใช้ได้เลย</p>
+<div class="toy"><canvas id="satin" aria-label="ผ้าต่วน"></canvas>
+<div class="ctl"><label>จำนวนเส้น n <input id="satin-n" type="range" min="3" max="12" value="8"> <b id="satin-nv">8</b></label>
+<label>ก้าว k <input id="satin-k" type="range" min="1" max="11" value="3"> <b id="satin-kv">3</b></label></div>
+<p class="out" id="satin-out"></p></div>
+<h3>ลายขอบเจ็ดแบบ</h3>
+<p class="lede">ลายขอบคือการซ้ำลายหนึ่งไปตามแนวเส้น นับการเลื่อน การพลิก และการหมุนครึ่งรอบ มีวิธีทำได้เจ็ดแบบพอดี จอห์น คอนเวย์ ตั้งชื่อตามรอยเท้า: กระโดด ก้าวเดิน ก้าวข้าง กระโดดสองเท้า และแบบหมุน วาดลายในช่องสี่เหลี่ยม ลายขอบทั้งเจ็ดจะเปลี่ยนตาม</p>
+<div class="toy"><div class="two"><div><canvas id="motif" aria-label="ช่องวาดลาย"></canvas>
+<div class="ctl"><button data-motif="hook">ขอ</button><button data-motif="clear">ล้าง</button><button data-motif="random">สุ่ม</button></div></div>
+<canvas id="friezes" aria-label="ลายขอบทั้งเจ็ด"></canvas></div></div>
+</section>
+
+<section class="sec" id="ikat">
+<p class="kick">มัดหมี่</p>
+<h2>ย้อมลายลงในเส้นด้าย</h2>
+<p class="lede">อิกัต มาจากคำมลายูและอินโดนีเซียที่แปลว่ามัด คือการย้อมลายก่อนทอ มัดปอยด้ายให้แน่นตรงที่ไม่ให้สีเข้า จุ่มย้อม แก้มัด มัดใหม่ แล้วย้อมอีก ในกัมพูชาผ้าไหมมัดเส้นพุ่งเรียกว่าโฮล ในไทยเรียกว่ามัดหมี่ พอทอ เส้นที่ย้อมแล้วแต่ละเส้นเหลื่อมจากเส้นข้าง ๆ นิดหนึ่ง ขอบลายจึงฟุ้งเหมือนขนนก</p>
+<div class="toy"><canvas id="ikat-cv" aria-label="มัด ย้อม ทอ"></canvas>
+<p class="out" id="ikat-cap"></p>
+<div class="ctl"><button data-ikat="prev" aria-label="ย้อนกลับ">◀</button><button data-ikat="play" aria-label="เล่นหรือหยุด">⏯</button><button data-ikat="next" aria-label="ถัดไป">▶</button>
+<button data-ikat="cow">วัว</button><button data-ikat="stars">ดาวกับดอกไม้</button><button data-ikat="kou">คำว่า គោ</button>
+<label><input id="ikat-fold" type="checkbox"> มัดตอนพับ</label>
+<label>เหลื่อม <input id="ikat-bleed" type="range" min="0" max="4" step="0.5" value="1.5"></label></div>
+<p class="legend">ช่างทอมักมัดปอยที่พับไว้ครั้งเดียว ได้ลายสมมาตรทั้งสองซีก</p></div>
+</section>
+
+<section class="sec" id="shawl">
+<p class="kick">ผ้าคลุมไหล่</p>
+<h2>ผ้าคลุมไหล่ของแนน</h2>
+<p class="lede">ผ้าโฮลไหมเขมร พื้นสีเข้ม วัวมีหนอกสีทอง ดอกไม้ชมพูกับเขียวหัวเป็ด และแถวอักษรเขมรที่ทอไว้ในผ้า คำสีทองอ่านว่า គោ (โก) แปลว่า “วัว” ภาพวาดใหม่คือแบบขนาด 72 × 104 ช่อง ทอลายสอง 1/2 เลื่อน “เหลื่อม” ไปที่ศูนย์ จะเห็นแบบตอนมัด เลื่อนขึ้นจะเห็นขอบฟุ้งของการมัดย้อม</p>
+<div class="toy"><div class="pair">
+<figure><img src="../img/shawl.jpg" width="900" height="1199" loading="lazy" alt="ผ้าไหมเขมรของแนน วัวสีทองบนพื้นเข้ม ดอกไม้ชมพูกับเขียว แถวอักษรเขมร">
+<figcaption>ภาพถ่าย · NaN</figcaption></figure>
+<figure><canvas id="shawl-draw" aria-label="ผ้าผืนเดียวกัน วาดด้วยเลขคณิต"></canvas>
+<figcaption>วาดด้วยเลขคณิต</figcaption></figure></div>
+<div class="ctl"><label>เหลื่อม <input id="shawl-bleed" type="range" min="0" max="4" step="0.25" value="1.5"></label>
+<label>ขยาย <input id="shawl-zoom" type="range" min="2" max="12" step="1" value="5"></label></div></div>
+</section>
+
+<section class="sec" id="cambodia">
+<p class="kick">กัมพูชา</p>
+<h2>โฮล ปิดาน และไหมทอง</h2>
+<div class="cards"><article><h3>สมปตโฮล</h3><p class="alt">Sampot hol · សំពត់ហូល</p><p>ผ้านุ่งไหมมัดหมี่เส้นพุ่ง ใส่ในงานแต่งงานและงานบุญ ทอลายสองไม่เท่ากันแบบ 1/2 บนสามตะกอ สีหนึ่งจึงเด่นด้านหน้า อีกสีเด่นด้านหลัง ลายโฮลที่มีชื่อเรียกมีมากกว่า 200 ลาย</p></article><article><h3>ปิดาน</h3><p class="alt">Pidan · ពិដាន</p><p>ผ้าโฮลภาพเล่าเรื่อง แขวนเหนือแท่นบูชาและเครื่องบูชา มีลายปราสาท พระพุทธรูป นาค ช้าง สิงห์ และแถวผู้คน ชื่อนี้คือคำเขมรที่แปลว่าเพดาน</p></article><article><h3>ไหมทอง</h3><p class="alt">Golden silk · សូត្រមាស</p><p>หนอนไหมพื้นเมืองของกัมพูชาปั่นรังสีเหลือง ปี 1996 คิคุโอะ โมริโมโตะ ช่างย้อมกิโมโนจากเกียวโต ก่อตั้งสถาบันสิ่งทอพื้นเมืองเขมร รวบรวมช่างทอสูงวัยที่ยังรู้วิชา แล้วปลูกหม่อนกับต้นไม้ให้สีย้อม สถาบันทำงานอยู่ที่เสียมราฐ</p></article><article><h3>หมู่บ้านทอผ้า</h3><p class="alt">Weaving villages · ភូមិត្បាញ</p><p>จังหวัดตาแก้ว ทางใต้ของพนมเปญ ขึ้นชื่อเรื่องผ้าไหม ส่วนเกาะดาจ เกาะกลางแม่น้ำโขงเหนือตัวเมืองขึ้นไปไม่ไกล มีกี่ทอผ้าอยู่ใต้ถุนบ้าน</p></article></div>
+</section>
+
+<section class="sec" id="thailand">
+<p class="kick">ไทย</p>
+<h2>กี่ของตัวเอง ชื่อลายของตัวเอง</h2>
+<div class="cards"><article><h3>มัดหมี่</h3><p class="alt">Mudmee · ម៉ាត់មី</p><p>มัดหมี่ของอีสาน มีทั้งไหมและฝ้าย ตั้งแต่ผ้าไหมเนื้อดีสำหรับงานพิธี ไปจนถึงผ้าซิ่นฝ้ายใส่ทุกวัน ลายมัดเป็นปอย และหลายลายมีชื่อ เช่น ลายนาค ลายขอ ลายต้นสน</p></article><article><h3>ขิด</h3><p class="alt">Khit · ខិត</p><p>การเสริมเส้นพุ่งแบบต่อเนื่อง ด้ายพิเศษวิ่งจากริมผ้าด้านหนึ่งไปอีกด้านบนเนื้อผ้าพื้น ยกด้วยไม้เก็บขิดให้เป็นลายข้าวหลามตัด ขอ และนาค หมอนขิดสามเหลี่ยมของอีสานคือชิ้นที่คุ้นตาที่สุด</p></article><article><h3>จก</h3><p class="alt">Jok · ចក</p><p>การเสริมเส้นพุ่งแบบไม่ต่อเนื่อง ใช้ปลายนิ้วหรือขนเม่นควักด้ายสีเข้าทีละหย่อม ตีนจก คือเชิงผ้าซิ่นไทยวนที่ทอลายจก เป็นความภูมิใจของแม่แจ่ม จังหวัดเชียงใหม่</p></article><article><h3>แพรวา</h3><p class="alt">Prae wa · ផ្រែវ៉ា</p><p>ผ้าสไบของชาวผู้ไทกาฬสินธุ์ ลายเสริมเส้นพุ่งแน่นเต็มผืนบนพื้นสีแดง คนไทยเรียกว่าราชินีแห่งผ้าไหม</p></article><article><h3>ตรานกยูง</h3><p class="alt">Peacock marks · ត្រាក្ងោក</p><p>ตรานกยูงสี่สีแบ่งชั้นผ้าไหมไทย สีทอง ไหมพันธุ์พื้นบ้าน ทำมือทุกขั้นตอน ย้อมสีธรรมชาติ สีเงิน ทำมือแต่ใช้เครื่องมือสมัยใหม่บางขั้น สีน้ำเงิน ไหมแท้ ทำด้วยวิธีใดก็ได้ สีเขียว ไหมผสม</p></article><article><h3>ฟื้นฟู</h3><p class="alt">Revival · ការស្តារ</p><p>หลังสงครามโลกครั้งที่สอง จิม ทอมป์สัน ชาวอเมริกัน ทำให้ผ้าไหมไทยเป็นสินค้าส่งออกที่มีชื่อในต่างประเทศ เขาหายตัวไปที่คาเมรอนไฮแลนด์ ประเทศมาเลเซีย ในปี 1967 ปี 1976 (พ.ศ. 2519) สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง ทรงก่อตั้งมูลนิธิส่งเสริมศิลปาชีพ ฝึกช่างทอในหมู่บ้านและรับซื้อผ้า</p></article></div>
+</section>
+
+<section class="sec" id="worm">
+<p class="kick">หนอนไหม</p>
+<h2>เส้นเดียว วนเป็นเลขแปด</h2>
+<p class="lede">หนอนไหม (Bombyx mori) อยู่กับมนุษย์มาหลายพันปี จนไม่มีในป่าแล้ว หนอนกินแต่ใบหม่อน และหนักขึ้นราวหนึ่งหมื่นเท่าในเวลาไม่ถึงเดือน จากนั้นชักใยสองถึงสามวัน ส่ายหัวเป็นเลขแปด วางเส้นใยเส้นเดียวไม่ขาด ยาวราว 900 เมตร ผีเสื้อไหมบินไม่ได้</p>
+<div class="toy"><canvas id="cocoon" aria-label="รังไหมกำลังถูกชักใย"></canvas>
+<p class="out" id="cocoon-m"></p>
+<div class="ctl"><button data-cocoon="fast">ข้ามไปจบ</button><button data-cocoon="reel">สาวไหม</button>
+<button data-cocoon="gold">ทอง / ขาว</button><button data-cocoon="again">ใหม่</button></div></div>
+<ul class="life"><li><b>ราว 10 วัน</b>ไข่</li><li><b>ราว 25 วัน ลอกคราบ 4 ครั้ง</b>หนอน กินแต่ใบหม่อน</li><li><b>2–3 วัน</b>ชักใยทำรัง</li><li><b>ราว 2 สัปดาห์</b>ดักแด้ อยู่ข้างใน</li><li><b>ไม่กี่วัน</b>ผีเสื้อ ผสมพันธุ์ วางไข่หลายร้อยฟอง บินไม่ได้</li></ul>
+<p class="lede">หนอนไหมพันธุ์พื้นบ้านไทยและเขมรตัวเล็ก ชักใยเป็นรังสีทอง และเลี้ยงได้หลายรุ่นต่อปี สาวด้วยมือ ได้เส้นไหมเส้นโตไม่สม่ำเสมอ</p>
+<p class="lede">ตำนานจีนเล่าว่า เหลยจู่ ชายาของจักรพรรดิเหลือง พบไหมเมื่อรังไหมตกลงในถ้วยชาแล้วคลายออกเป็นเส้น</p>
+</section>
+
+<section class="sec" id="road">
+<p class="kick">เส้นทางสายไหม</p>
+<h2>คาราวานไปตะวันตก เรือผ่านทางใต้</h2>
+<p class="lede">ผ้าไหมเดินทางไปตะวันตกกับกองคาราวานจากฉางอาน ผ่านเมืองโอเอซิส และทางทะเลผ่านเมืองท่าของเอเชียตะวันออกเฉียงใต้ ออกแอว เมืองท่าของฟูนันในสามเหลี่ยมปากแม่น้ำโขงปัจจุบัน ขุดพบเหรียญโรมันและลูกปัดอินเดีย แฟร์ดีนันท์ ฟอน ริชท์โฮเฟิน นักภูมิศาสตร์ชาวเยอรมัน ตั้งชื่อเส้นทางสายไหมในปี 1877 ราวปี 552 นักบวชซ่อนไข่ไหมในไม้เท้ากลวงนำไปถึงคอนสแตนติโนเปิล ไบแซนไทน์จึงเริ่มผลิตไหมเอง</p>
+<div class="toy"><canvas id="road-cv" aria-label="แผนที่เส้นทางสายไหม"></canvas>
+<p class="out" id="road-out"></p>
+<p class="legend">สีทอง: เส้นทางคาราวาน สีฟ้าอ่อน: เส้นทางทะเล สีชมพู: เชียงใหม่</p></div>
+</section>
+
+<section class="sec" id="draw">
+<p class="kick">วาด</p>
+<h2>วาดลายด้วยคณิต</h2>
+<p class="lede">แต่ละลายคือสูตรเดียวบนตารางจุดขัด ทอด้วยการเหลื่อมแบบเดียวกับมัดหมี่ ข้าวหลามตัดวัดระยะแบบรถแท็กซี่วิ่งตามถนนตาราง นาคพับแถวเป็นซิกแซก สามเหลี่ยมปาสกาลที่เก็บเฉพาะเลขคี่วาดเป็นสามเหลี่ยมเซียร์ปินสกี หรือพิมพ์ชื่อ</p>
+<div class="toy"><canvas id="mcloth" aria-label="ผ้าที่วาดจากสูตร"></canvas>
+<div class="ctl"><select id="mc-f" aria-label="สูตร">
+<option value="diamond">ข้าวหลามตัด</option><option value="naga">นาค</option>
+<option value="rings">วงแหวน</option><option value="xor">XOR</option>
+<option value="pascal">ปาสกาล เฉพาะเลขคี่</option><option value="name">ชื่อ</option></select>
+<label hidden><input id="mc-name" type="text" maxlength="14" placeholder="พิมพ์ชื่อ"></label>
+<label>ขนาด <input id="mc-p" type="range" min="4" max="24" value="9"></label>
+<label>จำนวนสี <input id="mc-k" type="range" min="2" max="6" value="4"></label>
+<label>เหลื่อม <input id="mc-b" type="range" min="0" max="4" step="0.5" value="1"></label>
+<button id="mc-pal">ชุดสี</button><button id="mc-save">บันทึกภาพ</button></div></div>
+</section>
+
+<section class="sec" id="sources">
+<p class="kick">แหล่งข้อมูล</p>
+<ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Pidan_(textile)">Pidan (textile) — Wikipedia</a></li><li><a href="https://en.wikipedia.org/wiki/Sampot">Sampot — Wikipedia</a></li><li><a href="https://www.ikttearth.org/what-is-khmer-ikatt">What is Khmer ikat? — IKTT</a></li><li><a href="https://www.nationalgeographic.com/culture/article/kikuo-morimoto-explorer-moments-reviving-silk-production-cambodia">Saving Cambodia&#x27;s ancient silk legacy — National Geographic</a></li><li><a href="https://thailandfoundation.or.th/thai-silk-elegance-in-threads/">Thai silk: elegance in threads — Thailand Foundation</a></li><li><a href="https://thailandfoundation.or.th/phrae-wa-the-queen-of-thai-silk/">Phrae wa, the queen of Thai silk — Thailand Foundation</a></li><li><a href="https://silkket.com/blogs/blog/thai-silk-product-standard-certification-mark-royally-bestowed-peacock-symbol">Thai silk peacock marks — Silkket</a></li><li><a href="https://tribaltrappings.com/teen-jok-from-mae-chaem-thailand/">Teen jok from Mae Chaem — Tribal Trappings</a></li><li><a href="https://www.britannica.com/animal/silkworm-moth">Silkworm moth — Britannica</a></li><li><a href="https://bioone.org/journals/zoological-science/volume-16/issue-2/zsj.16.215/Cocoon-Spinning-Behavior-in-the-Silkworm-Bombyx-mori/10.2108/zsj.16.215.full">Cocoon spinning behavior in the silkworm — Zoological Science</a></li><li><a href="https://en.wikipedia.org/wiki/Jacquard_machine">Jacquard machine — Wikipedia</a></li><li><a href="https://en.wikisource.org/wiki/Scientific_Memoirs/3/Sketch_of_the_Analytical_Engine_invented_by_Charles_Babbage,_Esq.">Ada Lovelace, Notes on the Analytical Engine (1843) — Wikisource</a></li><li><a href="https://en.wikipedia.org/wiki/Frieze_group">Frieze group — Wikipedia</a></li><li><a href="https://en.wikipedia.org/wiki/Satin_weave">Satin weave — Wikipedia</a></li><li><a href="https://en.wikipedia.org/wiki/Silk_Road">Silk Road — Wikipedia</a></li><li><a href="https://en.wikipedia.org/wiki/%C3%93c_Eo">Óc Eo — Wikipedia</a></li><li><a href="https://en.wikipedia.org/wiki/Sericulture">Sericulture — Wikipedia</a></li><li><a href="https://www.naturalearthdata.com/">Natural Earth 1:110m land</a></li><li><a href="https://fonts.google.com/noto/specimen/Noto+Sans+Khmer">Noto Sans Khmer — Google Fonts</a></li></ul>
+<p class="legend">แผนที่: Natural Earth ภาพผ้าคลุมไหล่: แนน ผ้าทุกผืนบนหน้านี้วาดในเบราว์เซอร์ด้วย docs/weave.js</p>
+</section>
+</main>
+<footer class="bot">ข้อความ CC BY 4.0 NaNoBotCo โค้ด MIT · <a href="https://github.com/NaNoBotCo/warp-and-weft">GitHub</a></footer>
+<script src="../weave.js?v=674ffc85" defer></script><script src="../top.js" defer></script>
+</body></html>
