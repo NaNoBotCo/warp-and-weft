@@ -244,11 +244,11 @@ function draft() {
   let st, cs;
   function draw() {
     const w = cv.clientWidth; cs = Math.max(8, Math.min(20, Math.floor(w / (E + 1 + TR))));
-    st = fit(cv, (S + 1 + P) * cs + 2); const x = st.x; x.clearRect(0, 0, st.w, st.h);
-    const ink = getComputedStyle(document.body).getPropertyValue("--ink").trim() || "#2a1a12";
+    st = fit(cv, (S + 1 + P) * cs + 2); const x = st.x; x.fillStyle = "#2a1c13"; x.fillRect(0, 0, st.w, st.h);
+    const ink = "#f3e6cf";
     function grid(ox, oy, nx, ny, fill) {
       for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
-        const f = fill(i, j); x.fillStyle = f || "rgba(128,110,90,.12)"; x.fillRect(ox + i * cs + 1, oy + j * cs + 1, cs - 2, cs - 2);
+        const f = fill(i, j); x.fillStyle = f || "rgba(255,240,215,.1)"; x.fillRect(ox + i * cs + 1, oy + j * cs + 1, cs - 2, cs - 2);
       }
     }
     const tx = (E + 1) * cs, dy = (S + 1) * cs;
@@ -311,6 +311,7 @@ function ikat() {
     const narrow = cv.clientWidth < 620, pw = narrow ? cv.clientWidth : (cv.clientWidth - 24) / 2;
     const cs = Math.floor(pw / W), ph = cs * H;
     st = fit(cv, narrow ? ph * 2 + 24 : ph); const x = st.x; x.clearRect(0, 0, st.w, st.h);
+    x.fillStyle = "#2a1c13"; x.fillRect(0, 0, pw, ph);
     const second = D.d.some(k => k === TEAL) && D.d.some(k => k !== TEAL && k > 0);
     // skein
     const lvl = a;
@@ -400,11 +401,11 @@ function frieze() {
     const w = cv.clientWidth, px = w < 520 ? 3 : 4, unit = (N + 1) * px, stripH = (2 * N + 2) * px, gap = 30;
     const st = fit(cv, G.length * (stripH + gap)), x = st.x; x.clearRect(0, 0, st.w, st.h);
     G.forEach((g, gi) => {
-      const oy = gi * (stripH + gap) + 18, mid = oy + (N + 1) * px, ops = g[3].split(",");
-      x.fillStyle = "#2e1c14"; x.fillRect(0, oy, st.w, stripH);
-      x.fillStyle = getComputedStyle(document.body).getPropertyValue("--ink").trim() || "#2a1a12";
+      const oy = gi * (stripH + gap) + 26, mid = oy + (N + 1) * px, ops = g[3].split(",");
+      x.fillStyle = "#2e1c14"; x.fillRect(0, oy - 24, st.w, stripH + 24);
+      x.fillStyle = "#f0e2c8";
       x.font = `600 13px ${UI}`; x.textBaseline = "bottom"; x.textAlign = "left";
-      x.fillText(`${T(g[1], g[2], g[4])} · ${g[0]}`, 0, oy - 3);
+      x.fillText(`${T(g[1], g[2], g[4])} · ${g[0]}`, 8, oy - 4);
       x.fillStyle = HEX[COLS[gi]];
       for (let s = 0; s * unit < st.w; s++) {
         const op = ops[s % 4], ox = s * unit + px / 2;
@@ -440,7 +441,7 @@ function satin() {
     const n = +nI.value; kI.max = n - 1; let k = Math.min(+kI.value, n - 1);
     $("#satin-nv").textContent = n; $("#satin-kv").textContent = k;
     const reps = cv.clientWidth < 520 ? 2 : 3, cells = n * reps, cs = Math.floor(Math.min(cv.clientWidth, 520) / cells);
-    const st = fit(cv, cells * cs), x = st.x; x.clearRect(0, 0, st.w, st.h);
+    const st = fit(cv, cells * cs), x = st.x; x.clearRect(0, 0, st.w, st.h); x.fillStyle = "#2a1c13"; x.fillRect(0, 0, cells * cs, cells * cs);
     const tied = new Set(); for (let r = 0; r < n; r++) tied.add((r * k) % n);
     for (let r = 0; r < cells; r++) {
       // weft float: one long bar, broken where it dips under
@@ -541,8 +542,8 @@ function cocoon() {
     return prev;
   }
   function draw(head) {
-    const x = st.x; x.clearRect(0, 0, st.w, st.h);
-    const g = x.createRadialGradient(cx(), cy(), 10, cx(), cy(), A() * 1.6); g.addColorStop(0, "rgba(120,160,80,.18)"); g.addColorStop(1, "rgba(120,160,80,0)");
+    const x = st.x; x.fillStyle = "#1c1510"; x.fillRect(0, 0, st.w, st.h);
+    const g = x.createRadialGradient(cx(), cy(), 10, cx(), cy(), A() * 1.6); g.addColorStop(0, "rgba(120,160,80,.3)"); g.addColorStop(1, "rgba(120,160,80,0)");
     x.fillStyle = g; x.fillRect(0, 0, st.w, st.h);
     // the worm, visible until the walls thicken
     const seen = Math.max(0, 1 - done * 3) * (mode === "spin" ? 1 : 0);
