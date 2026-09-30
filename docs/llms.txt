@@ -1,0 +1,9 @@
+# Warp and Weft · เส้นยืน เส้นพุ่ง · អំបោះបញ្ឈរ អំបោះទទឹង
+
+> Silk, weaving and the arithmetic inside cloth, drawn in the browser. A loom weaves a Khmer silk hol (weft ikat, 1/2 twill: warp up where (warp + pick) mod 3 = 0) of gold humped cattle and the Khmer word គោ (cow) from a 72 × 104 plan, with per-pick misregistration giving the ikat blur. Toys: a four-shaft weaving draft (cloth[pick][warp] = tie-up[shaft(warp)][treadle(pick)]); tie-and-dye ikat in seven steps; the seven frieze groups (Conway's hop, step, sidle, spinning hop, spinning sidle, jump, spinning jump) from a drawable 7 × 7 motif; satin steps (k coprime to n, k not 1 or n-1; none exist for n = 4 or 6); formula cloth (taxicab diamond, naga zigzag, rings, xor, Pascal's triangle mod 2); a silkworm spinning in figure eights (about 900 m) and reeling; a Silk Road map with great-circle distances in camel days (30 km/day) and monsoon sea days (5 knots). Sections on Cambodian hol, pidan and golden silk, and on Thai mudmee, khit, jok, prae wa and the peacock silk marks. English, Thai and Khmer.
+
+- [English](https://nanobotco.github.io/warp-and-weft/)
+- [ไทย](https://nanobotco.github.io/warp-and-weft/th/)
+- [ខ្មែរ](https://nanobotco.github.io/warp-and-weft/km/)
+- Sections: #loom-sec #math #ikat #shawl #cambodia #thailand #worm #road #draw #sources
+- Text CC BY 4.0, NaNoBotCo. Code MIT.
