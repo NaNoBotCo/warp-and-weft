@@ -218,10 +218,10 @@ def page():
 <link rel="canonical" href="{here}">{alts}<link rel="alternate" hreflang="x-default" href="{SITE}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Warp and Weft · เส้นยืน เส้นพุ่ง · អំបោះបញ្ឈរ អំបោះទទឹង">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{here}">
-<meta property="og:image" content="{SITE}card.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{te("A loom weaving a Khmer silk ikat of gold cattle, drawn by arithmetic", "กี่กำลังทอผ้าไหมมัดหมี่เขมรลายวัวสีทอง วาดด้วยเลขคณิต", "កីកំពុងត្បាញហូលសូត្រខ្មែរ ក្បាច់គោពណ៌មាស គូរដោយលេខនព្វន្ត")}">
+<meta property="og:image" content="{SITE}card{"" if L == "en" else "-" + L}.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{te("A loom weaving a Khmer silk ikat of gold cattle, drawn by arithmetic", "บัตรแชร์: เส้นยืน เส้นพุ่ง ผ้าไหม การทอ และเลขคณิตในเนื้อผ้า", "កាតចែករំលែក៖ អំបោះបញ្ឈរ អំបោះទទឹង សូត្រ ការត្បាញ និងលេខនព្វន្ត")}">
 <meta property="og:locale" content="{t("en_US", "th_TH", "km_KH")}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}card.jpg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}card{"" if L == "en" else "-" + L}.jpg">
 <link rel="icon" href="{up}icon.svg" type="image/svg+xml">
 <link rel="alternate" type="text/plain" href="{SITE}llms.txt" title="llms.txt">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
